@@ -1,0 +1,1505 @@
+[
+    {
+        "id": "a61ba6b739d91b5a",
+        "type": "tab",
+        "label": "플로우 1",
+        "disabled": false,
+        "info": "",
+        "env": []
+    },
+    {
+        "id": "8492cc80.68083",
+        "type": "subflow",
+        "name": "Hello!",
+        "info": "This is \"Hello!\" subflow!\nIt's querying database with string received from you.\n\n## Inputs\n`msg.params`, example value:\n```\n['Hello Me!']\n```\n\n## Outputs\n`msg.payload` - response from database",
+        "category": "Greetings",
+        "in": [
+            {
+                "x": 60,
+                "y": 80,
+                "wires": [
+                    {
+                        "id": "b51ebd14.7e21c"
+                    }
+                ]
+            }
+        ],
+        "out": [
+            {
+                "x": 760,
+                "y": 80,
+                "wires": [
+                    {
+                        "id": "ae2a4460.2dd028",
+                        "port": 0
+                    }
+                ]
+            }
+        ],
+        "env": [],
+        "color": "#FFCC66",
+        "icon": "font-awesome/fa-handshake-o"
+    },
+    {
+        "id": "f66a7ef5.6d77d",
+        "type": "subflow",
+        "name": "Find 1's In Array",
+        "info": "",
+        "category": "",
+        "in": [
+            {
+                "x": 50,
+                "y": 30,
+                "wires": [
+                    {
+                        "id": "f041e7cf.6de4a8"
+                    }
+                ]
+            }
+        ],
+        "out": [
+            {
+                "x": 580,
+                "y": 40,
+                "wires": [
+                    {
+                        "id": "b1630fdf.845a18",
+                        "port": 0
+                    }
+                ]
+            }
+        ],
+        "env": [],
+        "color": "#DDAA99"
+    },
+    {
+        "id": "2f9575fc2991fe5a",
+        "type": "subflow",
+        "name": "Hello! (2)",
+        "info": "This is \"Hello!\" subflow!\nIt's querying database with string received from you.\n\n## Inputs\n`msg.params`, example value:\n```\n['Hello Me!']\n```\n\n## Outputs\n`msg.payload` - response from database",
+        "category": "Greetings",
+        "in": [
+            {
+                "x": 60,
+                "y": 80,
+                "wires": [
+                    {
+                        "id": "3a74d6a2c484d2dc"
+                    }
+                ]
+            }
+        ],
+        "out": [
+            {
+                "x": 760,
+                "y": 80,
+                "wires": [
+                    {
+                        "id": "0e5b203dc7b51026",
+                        "port": 0
+                    }
+                ]
+            }
+        ],
+        "env": [],
+        "color": "#FFCC66",
+        "icon": "font-awesome/fa-handshake-o"
+    },
+    {
+        "id": "c2187e158a66f64b",
+        "type": "ui_group",
+        "name": "휠체어 정보",
+        "tab": "220e69f02df662af",
+        "order": 1,
+        "disp": false,
+        "width": "30",
+        "collapse": false,
+        "className": ""
+    },
+    {
+        "id": "8732c1a03f8c7bbf",
+        "type": "ui_base",
+        "theme": {
+            "name": "theme-light",
+            "lightTheme": {
+                "default": "#0094CE",
+                "baseColor": "#57acd6",
+                "baseFont": "Arial Black,Arial Black,Gadget,sans-serif",
+                "edited": true,
+                "reset": false
+            },
+            "darkTheme": {
+                "default": "#097479",
+                "baseColor": "#097479",
+                "baseFont": "-apple-system,BlinkMacSystemFont,Segoe UI,Roboto,Oxygen-Sans,Ubuntu,Cantarell,Helvetica Neue,sans-serif",
+                "edited": true,
+                "reset": false
+            },
+            "customTheme": {
+                "name": "Untitled Theme 1",
+                "default": "#4B7930",
+                "baseColor": "#4B7930",
+                "baseFont": "-apple-system,BlinkMacSystemFont,Segoe UI,Roboto,Oxygen-Sans,Ubuntu,Cantarell,Helvetica Neue,sans-serif",
+                "reset": false
+            },
+            "themeState": {
+                "base-color": {
+                    "default": "#0094CE",
+                    "value": "#57acd6",
+                    "edited": true
+                },
+                "page-titlebar-backgroundColor": {
+                    "value": "#57acd6",
+                    "edited": true
+                },
+                "page-backgroundColor": {
+                    "value": "#fafafa",
+                    "edited": true
+                },
+                "page-sidebar-backgroundColor": {
+                    "value": "#ffffff",
+                    "edited": false
+                },
+                "group-textColor": {
+                    "value": "#94cae5",
+                    "edited": false
+                },
+                "group-borderColor": {
+                    "value": "#ffffff",
+                    "edited": false
+                },
+                "group-backgroundColor": {
+                    "value": "#ffffff",
+                    "edited": false
+                },
+                "widget-textColor": {
+                    "value": "#111111",
+                    "edited": false
+                },
+                "widget-backgroundColor": {
+                    "value": "#57acd6",
+                    "edited": false
+                },
+                "widget-borderColor": {
+                    "value": "#ffffff",
+                    "edited": false
+                },
+                "base-font": {
+                    "value": "Arial Black,Arial Black,Gadget,sans-serif"
+                }
+            },
+            "angularTheme": {
+                "primary": "indigo",
+                "accents": "blue",
+                "warn": "red",
+                "background": "grey",
+                "palette": "light"
+            }
+        },
+        "site": {
+            "name": "Node-RED Dashboard",
+            "hideToolbar": "false",
+            "allowSwipe": "false",
+            "lockMenu": "false",
+            "allowTempTheme": "true",
+            "dateFormat": "DD/MM/YYYY",
+            "sizes": {
+                "sx": 60,
+                "sy": 60,
+                "gx": 6,
+                "gy": 6,
+                "cx": 6,
+                "cy": 4,
+                "px": 0,
+                "py": 0
+            }
+        }
+    },
+    {
+        "id": "5bba9e25.6ff41",
+        "type": "digitaloak-postgresql-connection-manager",
+        "name": "localhost",
+        "host": "postgres",
+        "port": "1880",
+        "database": "postgres",
+        "tls": "",
+        "use_tls": false,
+        "pool_max_clients": "50",
+        "pool_client_max_idle": "2000",
+        "client_query_timeout": "",
+        "client_statement_timeout": "",
+        "client_connection_timeout_millis": "",
+        "is_client_enabled": "1"
+    },
+    {
+        "id": "220e69f02df662af",
+        "type": "ui_tab",
+        "name": "Control Page",
+        "icon": "휠체어 현황",
+        "order": 1,
+        "disabled": false,
+        "hidden": false
+    },
+    {
+        "id": "078eae34fd03714d",
+        "type": "mqtt-broker",
+        "name": "172.18.95.254",
+        "broker": "192.168.101.100",
+        "port": "1883",
+        "clientid": "",
+        "autoConnect": true,
+        "usetls": false,
+        "protocolVersion": "4",
+        "keepalive": "60",
+        "cleansession": true,
+        "birthTopic": "",
+        "birthQos": "0",
+        "birthRetain": "false",
+        "birthPayload": "",
+        "birthMsg": {},
+        "closeTopic": "",
+        "closeQos": "0",
+        "closePayload": "",
+        "closeMsg": {},
+        "willTopic": "",
+        "willQos": "0",
+        "willPayload": "",
+        "willMsg": {},
+        "userProps": "",
+        "sessionExpiry": ""
+    },
+    {
+        "id": "ad4bd57a18cf7c47",
+        "type": "ui_spacer",
+        "z": "a61ba6b739d91b5a",
+        "name": "spacer",
+        "group": "c2187e158a66f64b",
+        "order": 3,
+        "width": 1,
+        "height": 1
+    },
+    {
+        "id": "15f5f65a07410576",
+        "type": "ui_spacer",
+        "z": "a61ba6b739d91b5a",
+        "name": "spacer",
+        "group": "c2187e158a66f64b",
+        "order": 7,
+        "width": 1,
+        "height": 1
+    },
+    {
+        "id": "5718e13ddac3caf4",
+        "type": "ui_spacer",
+        "z": "a61ba6b739d91b5a",
+        "name": "spacer",
+        "group": "c2187e158a66f64b",
+        "order": 8,
+        "width": 1,
+        "height": 1
+    },
+    {
+        "id": "b08d46984634accc",
+        "type": "ui_spacer",
+        "z": "a61ba6b739d91b5a",
+        "name": "spacer",
+        "group": "c2187e158a66f64b",
+        "order": 9,
+        "width": 11,
+        "height": 1
+    },
+    {
+        "id": "32f7087c30e4aa1b",
+        "type": "ui_spacer",
+        "z": "a61ba6b739d91b5a",
+        "name": "spacer",
+        "group": "c2187e158a66f64b",
+        "order": 10,
+        "width": 4,
+        "height": 1
+    },
+    {
+        "id": "5c43604605d82559",
+        "type": "ui_spacer",
+        "z": "a61ba6b739d91b5a",
+        "name": "spacer",
+        "group": "c2187e158a66f64b",
+        "order": 12,
+        "width": 5,
+        "height": 1
+    },
+    {
+        "id": "c22c18b70d6ab771",
+        "type": "ui_spacer",
+        "z": "a61ba6b739d91b5a",
+        "name": "spacer",
+        "group": "c2187e158a66f64b",
+        "order": 13,
+        "width": 4,
+        "height": 1
+    },
+    {
+        "id": "7b01ee2dab5d5df4",
+        "type": "ui_spacer",
+        "z": "a61ba6b739d91b5a",
+        "name": "spacer",
+        "group": "c2187e158a66f64b",
+        "order": 14,
+        "width": 5,
+        "height": 1
+    },
+    {
+        "id": "e23a300614033f30",
+        "type": "ui_spacer",
+        "z": "a61ba6b739d91b5a",
+        "name": "spacer",
+        "group": "c2187e158a66f64b",
+        "order": 15,
+        "width": 2,
+        "height": 1
+    },
+    {
+        "id": "c946fb3d6e92c891",
+        "type": "ui_spacer",
+        "z": "a61ba6b739d91b5a",
+        "name": "spacer",
+        "group": "c2187e158a66f64b",
+        "order": 19,
+        "width": 3,
+        "height": 1
+    },
+    {
+        "id": "7d5d035d0ace1c5a",
+        "type": "ui_spacer",
+        "z": "a61ba6b739d91b5a",
+        "name": "spacer",
+        "group": "c2187e158a66f64b",
+        "order": 20,
+        "width": 2,
+        "height": 1
+    },
+    {
+        "id": "433a6639feacc785",
+        "type": "ui_spacer",
+        "z": "a61ba6b739d91b5a",
+        "name": "spacer",
+        "group": "c2187e158a66f64b",
+        "order": 21,
+        "width": 3,
+        "height": 1
+    },
+    {
+        "id": "064c6fa3f6fdc4fe",
+        "type": "ui_spacer",
+        "z": "a61ba6b739d91b5a",
+        "name": "spacer",
+        "group": "c2187e158a66f64b",
+        "order": 22,
+        "width": 4,
+        "height": 1
+    },
+    {
+        "id": "b4cf5b9cc76b66d5",
+        "type": "ui_spacer",
+        "z": "a61ba6b739d91b5a",
+        "name": "spacer",
+        "group": "c2187e158a66f64b",
+        "order": 24,
+        "width": 5,
+        "height": 1
+    },
+    {
+        "id": "2df6dc9e5c7c5eb5",
+        "type": "ui_spacer",
+        "z": "a61ba6b739d91b5a",
+        "name": "spacer",
+        "group": "c2187e158a66f64b",
+        "order": 25,
+        "width": 4,
+        "height": 1
+    },
+    {
+        "id": "d45b87c570bf4d0e",
+        "type": "ui_spacer",
+        "z": "a61ba6b739d91b5a",
+        "name": "spacer",
+        "group": "c2187e158a66f64b",
+        "order": 26,
+        "width": 1,
+        "height": 1
+    },
+    {
+        "id": "3847e2bc44e6f788",
+        "type": "ui_spacer",
+        "z": "a61ba6b739d91b5a",
+        "name": "spacer",
+        "group": "c2187e158a66f64b",
+        "order": 30,
+        "width": 1,
+        "height": 1
+    },
+    {
+        "id": "6c6c7973769f35a5",
+        "type": "ui_spacer",
+        "z": "a61ba6b739d91b5a",
+        "name": "spacer",
+        "group": "c2187e158a66f64b",
+        "order": 31,
+        "width": 11,
+        "height": 1
+    },
+    {
+        "id": "bf1879ce4cd515f0",
+        "type": "ui_spacer",
+        "z": "a61ba6b739d91b5a",
+        "name": "spacer",
+        "group": "c2187e158a66f64b",
+        "order": 32,
+        "width": 11,
+        "height": 1
+    },
+    {
+        "id": "7580589207652d49",
+        "type": "mqtt-broker",
+        "name": "",
+        "broker": "223.195.194.41",
+        "port": "1883",
+        "clientid": "",
+        "autoConnect": true,
+        "usetls": false,
+        "protocolVersion": "4",
+        "keepalive": "60",
+        "cleansession": true,
+        "birthTopic": "",
+        "birthQos": "0",
+        "birthPayload": "",
+        "birthMsg": {},
+        "closeTopic": "",
+        "closeQos": "0",
+        "closePayload": "",
+        "closeMsg": {},
+        "willTopic": "",
+        "willQos": "0",
+        "willPayload": "",
+        "willMsg": {},
+        "userProps": "",
+        "sessionExpiry": ""
+    },
+    {
+        "id": "a7313021eac9fbc5",
+        "type": "mqtt-broker",
+        "name": "",
+        "broker": "172.18.77.109",
+        "port": "1883",
+        "clientid": "",
+        "autoConnect": true,
+        "usetls": false,
+        "protocolVersion": "4",
+        "keepalive": "60",
+        "cleansession": true,
+        "birthTopic": "a",
+        "birthQos": "0",
+        "birthPayload": "mqtt sucess",
+        "birthMsg": {},
+        "closeTopic": "",
+        "closeQos": "0",
+        "closePayload": "",
+        "closeMsg": {},
+        "willTopic": "",
+        "willQos": "0",
+        "willPayload": "",
+        "willMsg": {},
+        "userProps": "",
+        "sessionExpiry": ""
+    },
+    {
+        "id": "b51ebd14.7e21c",
+        "type": "change",
+        "z": "8492cc80.68083",
+        "name": "Greeting param",
+        "rules": [
+            {
+                "t": "set",
+                "p": "query.values",
+                "pt": "msg",
+                "to": "params",
+                "tot": "jsonata"
+            }
+        ],
+        "action": "",
+        "property": "",
+        "from": "",
+        "to": "",
+        "reg": false,
+        "x": 200,
+        "y": 80,
+        "wires": [
+            [
+                "34d944a0.2effbc"
+            ]
+        ]
+    },
+    {
+        "id": "34d944a0.2effbc",
+        "type": "template",
+        "z": "8492cc80.68083",
+        "name": "SELECT $1 AS Greeting",
+        "field": "query.text",
+        "fieldType": "msg",
+        "format": "sql",
+        "syntax": "mustache",
+        "template": "SELECT $1 AS greeting",
+        "output": "str",
+        "x": 410,
+        "y": 80,
+        "wires": [
+            [
+                "ae2a4460.2dd028"
+            ]
+        ]
+    },
+    {
+        "id": "ae2a4460.2dd028",
+        "type": "digitaloak-postgresql-query",
+        "z": "8492cc80.68083",
+        "name": "",
+        "server": "5bba9e25.6ff41",
+        "inputs": 1,
+        "outputs": 1,
+        "x": 630,
+        "y": 80,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "f041e7cf.6de4a8",
+        "type": "function",
+        "z": "f66a7ef5.6d77d",
+        "name": "Find 1's In Array",
+        "func": "for (i=0;i<msg.payload.length;i++){\n    if (msg.payload[i] == 1){\n        msg.index = i\n        node.send(msg);\n    }\n}\n",
+        "outputs": 1,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "x": 200,
+        "y": 80,
+        "wires": [
+            [
+                "b1630fdf.845a18"
+            ]
+        ]
+    },
+    {
+        "id": "b1630fdf.845a18",
+        "type": "join",
+        "z": "f66a7ef5.6d77d",
+        "name": "",
+        "mode": "custom",
+        "build": "array",
+        "property": "index",
+        "propertyType": "msg",
+        "key": "topic",
+        "joiner": "\\n",
+        "joinerType": "str",
+        "accumulate": false,
+        "timeout": "2",
+        "count": "",
+        "reduceRight": false,
+        "reduceExp": "",
+        "reduceInit": "",
+        "reduceInitType": "",
+        "reduceFixup": "",
+        "x": 430,
+        "y": 80,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "3a74d6a2c484d2dc",
+        "type": "change",
+        "z": "2f9575fc2991fe5a",
+        "name": "Greeting param",
+        "rules": [
+            {
+                "t": "set",
+                "p": "query.values",
+                "pt": "msg",
+                "to": "params",
+                "tot": "jsonata"
+            }
+        ],
+        "action": "",
+        "property": "",
+        "from": "",
+        "to": "",
+        "reg": false,
+        "x": 200,
+        "y": 80,
+        "wires": [
+            [
+                "e6ae6d914dfb34b1"
+            ]
+        ]
+    },
+    {
+        "id": "e6ae6d914dfb34b1",
+        "type": "template",
+        "z": "2f9575fc2991fe5a",
+        "name": "SELECT $1 AS Greeting",
+        "field": "query.text",
+        "fieldType": "msg",
+        "format": "sql",
+        "syntax": "mustache",
+        "template": "SELECT $1 AS greeting",
+        "output": "str",
+        "x": 410,
+        "y": 80,
+        "wires": [
+            [
+                "0e5b203dc7b51026"
+            ]
+        ]
+    },
+    {
+        "id": "0e5b203dc7b51026",
+        "type": "digitaloak-postgresql-query",
+        "z": "2f9575fc2991fe5a",
+        "name": "",
+        "server": "5bba9e25.6ff41",
+        "inputs": 1,
+        "outputs": 1,
+        "x": 630,
+        "y": 80,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "719327873e08030f",
+        "type": "ui_template",
+        "z": "a61ba6b739d91b5a",
+        "group": "c2187e158a66f64b",
+        "name": "map",
+        "order": 4,
+        "width": 19,
+        "height": 11,
+        "format": "<img id=\"imgmap\" src=\"https://ifh.cc/g/7xHxQG.png\" draggable=\"false\" style=\"max-width: 100%; max-height: 100%;\">\n<div id=\"coords\" style=\"color: black; z-index: 100; pointer-events:none;\"></div>\n<div id=\"imgcursor\" style=\"position: absolute; top: 0px; left: 0px; height: 40px; width: 40px \"\n    src=\"http://www.pngall.com/wp-content/uploads/2017/05/Map-Marker-PNG-File.png\"></div>\n\n<script>\n    (function () {\n        const map = document.getElementById(\"imgmap\");\n        const imgCursor = document.getElementById(\"imgcursor\");\n        const coordsText = $(\"#coords\");\n\n        const mqttClient = new Paho.MQTT.Client(\"223.195.194.41\", 1883, \"client-123\");\n        mqttClient.connect({\n            onSuccess: onMqttConnect,\n        });\n\n        function onMqttConnect() {\n            mqttClient.subscribe(\"map\");\n        }\n\n        // 콜백 함수\n        mqttClient.onMessageArrived = function (message) {\n            const payload = JSON.parse(message.payloadString);\n            if (payload && payload.coordX && payload.coordY) {\n                const xCoordinate = payload.coordX;\n                const yCoordinate = payload.coordY;\n                updateRobotMarker(xCoordinate, yCoordinate);\n            }\n        };\n        // 마커의 위치 업데이트 -> 화면상의 좌표를 실제 픽셀 좌표로 변환\n        function updateRobotMarker(x, y) {\n            // 화면상의 좌표를 실제 픽셀 단위 좌표로 변환\n            const mapWidth = 40;\n            const mapHeight = 40;\n\n            // 화면 크기에 따라 조정 위치 결정\n            const markerX = (x * mapWidth) - (markerWidth / 2);\n            const markerY = (y * mapHeight) - (markerHeight / 2);\n\n            // 마커 위치 업데이트\n            imgCursor.style.left = markerX + \"px\";\n            imgCursor.style.top = markerY + \"px\";\n        }\n\n        $('#imgmap').on('mousemove mousedown mouseup', function (e) {\n            e.preventDefault();\n            const rect = map.getBoundingClientRect();\n            let xCoordinate = ((e.clientX - rect.left) / (rect.right - rect.left)).toFixed(4);\n            let yCoordinate = ((e.clientY - rect.top) / (rect.bottom - rect.top)).toFixed(4);\n            if (xCoordinate < 1 && xCoordinate > 0 && yCoordinate < 1 && yCoordinate > 0 && e.buttons == 1) {\n                coordsText.text(\"X: \" + xCoordinate + \", Y: \" + yCoordinate);\n                // Publish your data here\n            }\n        });\n    })();\n</script>",
+        "storeOutMessages": true,
+        "fwdInMessages": true,
+        "resendOnRefresh": true,
+        "templateScope": "local",
+        "className": "",
+        "x": 1050,
+        "y": 360,
+        "wires": [
+            [
+                "a8c40101a459229d"
+            ]
+        ]
+    },
+    {
+        "id": "14a2029ffc172293",
+        "type": "ui_button",
+        "z": "a61ba6b739d91b5a",
+        "name": "up",
+        "group": "c2187e158a66f64b",
+        "order": 11,
+        "width": 2,
+        "height": 2,
+        "passthru": false,
+        "label": "",
+        "tooltip": "",
+        "color": "",
+        "bgcolor": "",
+        "className": "up-button",
+        "icon": "arrow_upwards",
+        "payload": "w",
+        "payloadType": "str",
+        "topic": "rockstar",
+        "topicType": "msg",
+        "x": 1430,
+        "y": 320,
+        "wires": [
+            [
+                "4fb468f59d20bf74"
+            ]
+        ]
+    },
+    {
+        "id": "279b340b1f157a73",
+        "type": "inject",
+        "z": "a61ba6b739d91b5a",
+        "name": "button",
+        "props": [
+            {
+                "p": "payload"
+            },
+            {
+                "p": "rockstar",
+                "v": "",
+                "vt": "str"
+            }
+        ],
+        "repeat": "",
+        "crontab": "",
+        "once": false,
+        "onceDelay": 0.1,
+        "topic": "",
+        "payload": "<img src=\"https://png.pngtree.com/png-vector/20190420/ourmid/pngtree-vector-left-arrow-icon-png-image_966660.jpg\">",
+        "payloadType": "str",
+        "x": 1150,
+        "y": 480,
+        "wires": [
+            [
+                "8d1768c5a91f007d",
+                "b5847f0121452677",
+                "cb52a7b655c43f04",
+                "0df5594e4f05e092",
+                "b28db22fced7e838",
+                "07d4f209b70c24e1",
+                "14a2029ffc172293"
+            ]
+        ]
+    },
+    {
+        "id": "fe2f3580ec2a04ea",
+        "type": "change",
+        "z": "a61ba6b739d91b5a",
+        "name": "",
+        "rules": [
+            {
+                "t": "set",
+                "p": "ui_control.icon",
+                "pt": "msg",
+                "to": "arrow",
+                "tot": "str"
+            }
+        ],
+        "action": "",
+        "property": "",
+        "from": "",
+        "to": "",
+        "reg": false,
+        "x": 1820,
+        "y": 400,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "0df5594e4f05e092",
+        "type": "ui_button",
+        "z": "a61ba6b739d91b5a",
+        "name": "right",
+        "group": "c2187e158a66f64b",
+        "order": 18,
+        "width": 2,
+        "height": 2,
+        "passthru": false,
+        "label": "",
+        "tooltip": "",
+        "color": "",
+        "bgcolor": "",
+        "className": "",
+        "icon": "arrow_forward",
+        "payload": "d",
+        "payloadType": "str",
+        "topic": "rockstar",
+        "topicType": "msg",
+        "x": 1430,
+        "y": 380,
+        "wires": [
+            [
+                "4fb468f59d20bf74"
+            ]
+        ]
+    },
+    {
+        "id": "93484263271da0b2",
+        "type": "change",
+        "z": "a61ba6b739d91b5a",
+        "name": "",
+        "rules": [
+            {
+                "t": "set",
+                "p": "ui_control.icon",
+                "pt": "msg",
+                "to": "arrow",
+                "tot": "str"
+            }
+        ],
+        "action": "",
+        "property": "",
+        "from": "",
+        "to": "",
+        "reg": false,
+        "x": 1820,
+        "y": 340,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "8d1768c5a91f007d",
+        "type": "ui_button",
+        "z": "a61ba6b739d91b5a",
+        "name": "정지",
+        "group": "c2187e158a66f64b",
+        "order": 17,
+        "width": 2,
+        "height": 2,
+        "passthru": false,
+        "label": "정지",
+        "tooltip": "",
+        "color": "",
+        "bgcolor": "",
+        "className": "stop-button",
+        "icon": "",
+        "payload": "s",
+        "payloadType": "str",
+        "topic": "rockstar",
+        "topicType": "msg",
+        "x": 1430,
+        "y": 440,
+        "wires": [
+            [
+                "4fb468f59d20bf74"
+            ]
+        ]
+    },
+    {
+        "id": "b28db22fced7e838",
+        "type": "ui_button",
+        "z": "a61ba6b739d91b5a",
+        "name": "left",
+        "group": "c2187e158a66f64b",
+        "order": 16,
+        "width": 2,
+        "height": 2,
+        "passthru": false,
+        "label": "",
+        "tooltip": "",
+        "color": "",
+        "bgcolor": "",
+        "className": "",
+        "icon": "arrow_back",
+        "payload": "a",
+        "payloadType": "str",
+        "topic": "rockstar",
+        "topicType": "msg",
+        "x": 1430,
+        "y": 500,
+        "wires": [
+            [
+                "4fb468f59d20bf74"
+            ]
+        ]
+    },
+    {
+        "id": "db4540f081e7fc21",
+        "type": "change",
+        "z": "a61ba6b739d91b5a",
+        "name": "",
+        "rules": [
+            {
+                "t": "set",
+                "p": "ui_control.icon",
+                "pt": "msg",
+                "to": "arrow",
+                "tot": "str"
+            }
+        ],
+        "action": "",
+        "property": "",
+        "from": "",
+        "to": "",
+        "reg": false,
+        "x": 1820,
+        "y": 520,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "07d4f209b70c24e1",
+        "type": "ui_button",
+        "z": "a61ba6b739d91b5a",
+        "name": "down",
+        "group": "c2187e158a66f64b",
+        "order": 23,
+        "width": 2,
+        "height": 2,
+        "passthru": false,
+        "label": "",
+        "tooltip": "",
+        "color": "",
+        "bgcolor": "",
+        "className": "",
+        "icon": "arrow_downward",
+        "payload": "x",
+        "payloadType": "str",
+        "topic": "rockstar",
+        "topicType": "msg",
+        "x": 1430,
+        "y": 560,
+        "wires": [
+            [
+                "4fb468f59d20bf74"
+            ]
+        ]
+    },
+    {
+        "id": "9ee49909c2294dde",
+        "type": "change",
+        "z": "a61ba6b739d91b5a",
+        "name": "",
+        "rules": [
+            {
+                "t": "set",
+                "p": "ui_control.icon",
+                "pt": "msg",
+                "to": "arrow",
+                "tot": "str"
+            }
+        ],
+        "action": "",
+        "property": "",
+        "from": "",
+        "to": "",
+        "reg": false,
+        "x": 1820,
+        "y": 580,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "b5847f0121452677",
+        "type": "ui_button",
+        "z": "a61ba6b739d91b5a",
+        "name": "",
+        "group": "c2187e158a66f64b",
+        "order": 5,
+        "width": 5,
+        "height": 2,
+        "passthru": false,
+        "label": "주행 권한 시작",
+        "tooltip": "",
+        "color": "",
+        "bgcolor": "#469536",
+        "className": "",
+        "icon": "",
+        "payload": "start",
+        "payloadType": "str",
+        "topic": "alarm",
+        "topicType": "msg",
+        "x": 1460,
+        "y": 620,
+        "wires": [
+            [
+                "141da57729d27f37"
+            ]
+        ]
+    },
+    {
+        "id": "cb52a7b655c43f04",
+        "type": "ui_button",
+        "z": "a61ba6b739d91b5a",
+        "name": "",
+        "group": "c2187e158a66f64b",
+        "order": 6,
+        "width": 5,
+        "height": 2,
+        "passthru": false,
+        "label": "주행 권한 취소",
+        "tooltip": "",
+        "color": "",
+        "bgcolor": "#dd5035",
+        "className": "",
+        "icon": "",
+        "payload": "stop",
+        "payloadType": "str",
+        "topic": "alarm",
+        "topicType": "msg",
+        "x": 1460,
+        "y": 680,
+        "wires": [
+            [
+                "141da57729d27f37"
+            ]
+        ]
+    },
+    {
+        "id": "edf0e7b2419ac021",
+        "type": "ui_template",
+        "z": "a61ba6b739d91b5a",
+        "group": "c2187e158a66f64b",
+        "name": "map css",
+        "order": 28,
+        "width": 1,
+        "height": 1,
+        "format": "<style>\n    body {\n    background: -webkit-linear-gradient(\n    55deg,\n    //#383838 30%,\n   // #1F1F1F 50%,\n    //#1F1F1F 60%\n    );\n    /*-webkit-touch-callout: none !important;*/\n    }\n</style>",
+        "storeOutMessages": true,
+        "fwdInMessages": true,
+        "resendOnRefresh": true,
+        "templateScope": "local",
+        "className": "",
+        "x": 900,
+        "y": 360,
+        "wires": [
+            [
+                "719327873e08030f"
+            ]
+        ]
+    },
+    {
+        "id": "c06a9433cca23980",
+        "type": "ui_template",
+        "z": "a61ba6b739d91b5a",
+        "group": "c2187e158a66f64b",
+        "name": "button css",
+        "order": 27,
+        "width": 1,
+        "height": 1,
+        "format": "<style>\n    .stop-button {\n        font-size:20px;\n    }\n</style>",
+        "storeOutMessages": true,
+        "fwdInMessages": true,
+        "resendOnRefresh": true,
+        "templateScope": "local",
+        "className": "",
+        "x": 1150,
+        "y": 540,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "3a7ceda1288eb581",
+        "type": "mqtt in",
+        "z": "a61ba6b739d91b5a",
+        "name": "",
+        "topic": "rockstar",
+        "qos": "0",
+        "datatype": "utf8",
+        "broker": "7580589207652d49",
+        "nl": false,
+        "rap": true,
+        "rh": 0,
+        "inputs": 0,
+        "x": 1910,
+        "y": 460,
+        "wires": [
+            [
+                "a30bed79d4640e11"
+            ]
+        ]
+    },
+    {
+        "id": "4fb468f59d20bf74",
+        "type": "mqtt out",
+        "z": "a61ba6b739d91b5a",
+        "name": "",
+        "topic": "rockstar",
+        "qos": "0",
+        "retain": "false",
+        "respTopic": "",
+        "contentType": "",
+        "userProps": "",
+        "correl": "",
+        "expiry": "",
+        "broker": "7580589207652d49",
+        "x": 1720,
+        "y": 460,
+        "wires": []
+    },
+    {
+        "id": "a30bed79d4640e11",
+        "type": "debug",
+        "z": "a61ba6b739d91b5a",
+        "name": "debug 4",
+        "active": true,
+        "tosidebar": true,
+        "console": false,
+        "tostatus": false,
+        "complete": "false",
+        "statusVal": "",
+        "statusType": "auto",
+        "x": 2080,
+        "y": 460,
+        "wires": []
+    },
+    {
+        "id": "06f463cc6b457120",
+        "type": "exec",
+        "z": "a61ba6b739d91b5a",
+        "command": "'C:\\Users\\LG\\yolov7\\mqtt_example\\mqtt_p.python'",
+        "addpay": "payload",
+        "append": "",
+        "useSpawn": "false",
+        "timer": "",
+        "winHide": false,
+        "oldrc": false,
+        "name": "주행 버튼",
+        "x": 1440,
+        "y": 260,
+        "wires": [
+            [],
+            [
+                "4fb468f59d20bf74"
+            ],
+            []
+        ]
+    },
+    {
+        "id": "c415593bbc85e52e",
+        "type": "mqtt out",
+        "z": "a61ba6b739d91b5a",
+        "name": "",
+        "topic": "present_position",
+        "qos": "0",
+        "retain": "",
+        "respTopic": "",
+        "contentType": "",
+        "userProps": "",
+        "correl": "",
+        "expiry": "",
+        "broker": "7580589207652d49",
+        "x": 2000,
+        "y": 100,
+        "wires": []
+    },
+    {
+        "id": "2e2e8e1ffed6a25b",
+        "type": "exec",
+        "z": "a61ba6b739d91b5a",
+        "command": "'C:\\Users\\LG\\yolov7\\mqtt_example\\mqtt_s.py'",
+        "addpay": "",
+        "append": "",
+        "useSpawn": "false",
+        "timer": "",
+        "winHide": false,
+        "oldrc": false,
+        "name": "휠체어 위치",
+        "x": 1710,
+        "y": 100,
+        "wires": [
+            [],
+            [
+                "c415593bbc85e52e"
+            ],
+            []
+        ]
+    },
+    {
+        "id": "f17eb9ce51a606d3",
+        "type": "debug",
+        "z": "a61ba6b739d91b5a",
+        "name": "debug 5",
+        "active": true,
+        "tosidebar": true,
+        "console": false,
+        "tostatus": false,
+        "complete": "false",
+        "statusVal": "",
+        "statusType": "auto",
+        "x": 2120,
+        "y": 180,
+        "wires": []
+    },
+    {
+        "id": "d5ddb828248dc46f",
+        "type": "mqtt in",
+        "z": "a61ba6b739d91b5a",
+        "name": "",
+        "topic": "present_position",
+        "qos": "0",
+        "datatype": "auto-detect",
+        "broker": "7580589207652d49",
+        "nl": false,
+        "rap": true,
+        "rh": 0,
+        "inputs": 0,
+        "x": 1920,
+        "y": 180,
+        "wires": [
+            [
+                "f17eb9ce51a606d3"
+            ]
+        ]
+    },
+    {
+        "id": "e356e16a62c7e9cb",
+        "type": "exec",
+        "z": "a61ba6b739d91b5a",
+        "command": "'C:\\Users\\LG\\yolov7\\mqtt_example\\mqtt_p_r.py'",
+        "addpay": "",
+        "append": "",
+        "useSpawn": "false",
+        "timer": "",
+        "winHide": false,
+        "oldrc": false,
+        "name": "주행 권한",
+        "x": 1440,
+        "y": 740,
+        "wires": [
+            [],
+            [
+                "141da57729d27f37"
+            ],
+            []
+        ]
+    },
+    {
+        "id": "141da57729d27f37",
+        "type": "mqtt out",
+        "z": "a61ba6b739d91b5a",
+        "name": "",
+        "topic": "alarm",
+        "qos": "0",
+        "retain": "",
+        "respTopic": "",
+        "contentType": "",
+        "userProps": "",
+        "correl": "",
+        "expiry": "",
+        "broker": "7580589207652d49",
+        "x": 1810,
+        "y": 640,
+        "wires": []
+    },
+    {
+        "id": "a337b1620a8afb50",
+        "type": "mqtt in",
+        "z": "a61ba6b739d91b5a",
+        "name": "",
+        "topic": "alarm",
+        "qos": "0",
+        "datatype": "auto-detect",
+        "broker": "7580589207652d49",
+        "nl": false,
+        "rap": true,
+        "rh": 0,
+        "inputs": 0,
+        "x": 1950,
+        "y": 640,
+        "wires": [
+            [
+                "0e651079786dee8f"
+            ]
+        ]
+    },
+    {
+        "id": "0e651079786dee8f",
+        "type": "debug",
+        "z": "a61ba6b739d91b5a",
+        "name": "debug 6",
+        "active": true,
+        "tosidebar": true,
+        "console": false,
+        "tostatus": false,
+        "complete": "payload",
+        "targetType": "msg",
+        "statusVal": "",
+        "statusType": "auto",
+        "x": 2100,
+        "y": 640,
+        "wires": []
+    },
+    {
+        "id": "70623fb449f95449",
+        "type": "ui_toast",
+        "z": "a61ba6b739d91b5a",
+        "position": "dialog",
+        "displayTime": "10",
+        "highlight": "",
+        "sendall": false,
+        "outputs": 1,
+        "ok": "확인",
+        "cancel": "",
+        "raw": false,
+        "className": "긴급 호출 알림",
+        "topic": "Emergency",
+        "name": "긴급 호출 알림",
+        "x": 1180,
+        "y": 660,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "5e61b47668bf778f",
+        "type": "mqtt in",
+        "z": "a61ba6b739d91b5a",
+        "name": "",
+        "topic": "Emergency",
+        "qos": "2",
+        "datatype": "auto-detect",
+        "broker": "7580589207652d49",
+        "nl": false,
+        "rap": true,
+        "rh": 0,
+        "inputs": 0,
+        "x": 770,
+        "y": 660,
+        "wires": [
+            [
+                "f1dab6d48f8605d8"
+            ]
+        ]
+    },
+    {
+        "id": "f1dab6d48f8605d8",
+        "type": "change",
+        "z": "a61ba6b739d91b5a",
+        "name": "",
+        "rules": [
+            {
+                "t": "set",
+                "p": "payload",
+                "pt": "msg",
+                "to": "[ R-01 ] 로부터 긴급 호출 신호가 수신되었습니다. 환자의 안전을 위해 필요시 휠체어의 주행을 제어해 주십시오.",
+                "tot": "str"
+            }
+        ],
+        "action": "",
+        "property": "",
+        "from": "",
+        "to": "",
+        "reg": false,
+        "x": 980,
+        "y": 660,
+        "wires": [
+            [
+                "70623fb449f95449"
+            ]
+        ]
+    },
+    {
+        "id": "8826262eed46be73",
+        "type": "mqtt in",
+        "z": "a61ba6b739d91b5a",
+        "name": "map_qos0",
+        "topic": "map",
+        "qos": "0",
+        "datatype": "auto-detect",
+        "broker": "7580589207652d49",
+        "nl": false,
+        "rap": true,
+        "rh": 0,
+        "inputs": 0,
+        "x": 740,
+        "y": 360,
+        "wires": [
+            [
+                "edf0e7b2419ac021"
+            ]
+        ]
+    },
+    {
+        "id": "a8c40101a459229d",
+        "type": "debug",
+        "z": "a61ba6b739d91b5a",
+        "name": "debug 7",
+        "active": true,
+        "tosidebar": true,
+        "console": false,
+        "tostatus": false,
+        "complete": "false",
+        "statusVal": "",
+        "statusType": "auto",
+        "x": 1200,
+        "y": 360,
+        "wires": []
+    },
+    {
+        "id": "102d8c2130a21d57",
+        "type": "ui_template",
+        "z": "a61ba6b739d91b5a",
+        "group": "c2187e158a66f64b",
+        "name": "css",
+        "order": 29,
+        "width": 1,
+        "height": 1,
+        "format": "<style>\n/*\nRefer to \nhttps://community.homey.app/t/node-red-a-widget-based-dashboard-working-with-homey-trough-mqtt/18798/528?page=22\n*/\n\n/*root, a, button, p, div {\n    -webkit-user-select: none !important;\n}*/\n\n\nbody {\n    background: -webkit-linear-gradient(\n    55deg,\n    #383838 30%,\n    #1F1F1F 50%,\n    #1F1F1F 60%\n    );\n    /*-webkit-touch-callout: none !important;*/\n}\n\n.nr-dashboard-tabs md-tab-label {\n    background-color: ##99BbCC;\n    color: #FFFFFF;\n}\n\nbody.nr-dashboard-theme md-toolbar,\nbody.nr-dashboard-theme md-content md-card {\n    background-color: transparent !important;\n    color: #FFFFFF;\n}\n\nui-card-panel {\n    background-color: rgba(255,255,255,0.1) !important;\n    border-radius: 10px !important;\n}\n    \n.nr-dashboard-text {\nfont-size: 24px; \nfont-weight: bold; \n}\n\n.md-card.md-default-theme, md-card {\n    border-radius: 10px;\n}\n\n.nr-dashboard-switch.ng-scope {\n    background-color: rgba(255,255,255,.2) !important;\n}\n\n.nr-dashboard-switch.ng-scope:hover {\n    background-color: rgba(255,255,255,.5) !important;\n}\n\n.nr-dashboard-theme .nr-dashboard-button .md-button {\n    background-color: rgba(255,255,255,.2);\n}\n\n.md-button {\n    border-radius: 15px;\n}\n\n.nr-dashboard-cardpanel layout-column {\n    background-color: rgba(255,255,255,0.2) !important;\n    background-color: transparent !important;\n    border-radius: 10px !important;\n}\n\n.nr-dashboard-theme ui-card-panel {\n    border: none;\n}\n\n.nr-dashboard-theme md-content md-card {\n    background-color: transparent !important;\n}\n.nr-dashboard-template {\noverflow-y: visible;\n}\n\n.nr-dashboard-theme ui-card-panel p.nr-dashboard-cardtitle {\n    color: rgba(255, 255, 255, 1);\n    font-weight: bold;\n}\n\n.nr-dashboard-button .md-button {\nfont-size: 23px; /* 원하는 텍스트 크기로 설정 */\nfont-weight: bold; /* 볼드체 설정 */\n}\n\n</style>\n\n<script>\ndocument.ontouchmove = function (e) {\n    e.preventDefault();\n}\n</script>",
+        "storeOutMessages": true,
+        "fwdInMessages": true,
+        "resendOnRefresh": false,
+        "templateScope": "global",
+        "className": "",
+        "x": 1110,
+        "y": 60,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "7856c458d07edaa1",
+        "type": "inject",
+        "z": "a61ba6b739d91b5a",
+        "name": "",
+        "props": [
+            {
+                "p": "payload"
+            }
+        ],
+        "repeat": "",
+        "crontab": "",
+        "once": false,
+        "onceDelay": 0.1,
+        "topic": "",
+        "payload": "[{\"번호\":\"R-01\",\"목적지\":\"응급의료 센터\",\"상태\":\"주행 중\",\"호출\":\" - \"},{\"번호\":\"R-02\",\"목적지\":\" - \",\"상태\":\"대기\",\"호출\":\" - \"},{\"번호\":\"R-03\",\"목적지\":\" - \",\"상태\":\"대기\",\"호출\":\" - \"}]",
+        "payloadType": "json",
+        "x": 950,
+        "y": 120,
+        "wires": [
+            [
+                "c07d5ecb307e9810",
+                "88a53779171566eb"
+            ]
+        ]
+    },
+    {
+        "id": "c07d5ecb307e9810",
+        "type": "ui_text",
+        "z": "a61ba6b739d91b5a",
+        "group": "c2187e158a66f64b",
+        "order": 2,
+        "width": 10,
+        "height": 1,
+        "name": "주행 권한 제어",
+        "label": "주행 권한 제어",
+        "format": "",
+        "layout": "row-left",
+        "className": "font-weight: bold;",
+        "style": true,
+        "font": "Impact,Impact,Charcoal,sans-serif",
+        "fontSize": "25",
+        "color": "#ffffff",
+        "x": 1140,
+        "y": 120,
+        "wires": []
+    },
+    {
+        "id": "88a53779171566eb",
+        "type": "ui_text",
+        "z": "a61ba6b739d91b5a",
+        "group": "c2187e158a66f64b",
+        "order": 1,
+        "width": 19,
+        "height": 1,
+        "name": "휠체어 현황",
+        "label": "휠체어 현황",
+        "format": "",
+        "layout": "row-left",
+        "className": "font-weight: bold;",
+        "style": true,
+        "font": "Impact,Impact,Charcoal,sans-serif",
+        "fontSize": "25",
+        "color": "#ffffff",
+        "x": 1130,
+        "y": 180,
+        "wires": []
+    }
+]

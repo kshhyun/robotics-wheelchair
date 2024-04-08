@@ -1,0 +1,15 @@
+<RCC>
+  <qresource prefix="assets">
+    <file>assets/map_1f.svg</file>
+    <file>assets/emr_light.svg</file>
+    <file>assets/arrow_down.svg</file>
+    <file>assets/arrow_left.svg</file>
+    <file>assets/arrow_right.svg</file>
+    <file>assets/arrow_up.svg</file>
+    <file>assets/map_2f.jpg</file>
+    <file>assets/map_3f.jpg</file>
+    <file>assets/map_5f.jpg</file>
+    <file>assets/map_6f.jpg</file>
+    <file>assets/map_4f.jpg</file>
+  </qresource>
+</RCC>
