@@ -3,22 +3,24 @@
 ## 1. 프로젝트 개요
 복잡한 병원 환경에 실시간 대응하는 지능형 휠체어 로봇 제작하였습니다.
 보호자의 도움없이 간단한 조작으로 환자의 편의성 및 병원 내 혼잡도 감소를 목표로 설정하였습니다.
-<br/><br/><br/>
+<br/><br/>
 
 ## 2. 개발 스택
 ### Front End
 
-<br/><br/><br/>
+<br/><br/>
 
 ## 3. 프로젝트 구조
 - ROS(Robot Operating System) : 로봇 개발을 위한 운영체제
 - publisher, Subscriber를 통한 송수신
-  
+  #### 사용자 <-> 로봇
   ![image](https://github.com/user-attachments/assets/db22e2ab-003d-481d-9985-58d64e9261fe)
 
-<br/><br/><br/>
-  ![image](https://github.com/user-attachments/assets/8e5dd7fb-10cd-4b36-8a74-3768a2a3fd70)
-<br/><br/><br/>
+  #### 사용자 <-> 관리자
+  ![image](https://github.com/user-attachments/assets/1e4a12f1-0255-4e56-ad3f-fe27facee1ab)
+
+
+<br/><br/>
 
 ## 4. 주요 기능
 - **병원 지도 작성** : LiDAR를 활용한 SLAM 기술로 병원 내 지도 작성 및 위치 파악.
