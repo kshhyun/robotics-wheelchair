@@ -6,8 +6,31 @@
 <br/><br/>
 
 ## 2. 개발 스택
-### Front End
+### OS
+- Linux(Ubuntu 20.04 LTS)
+- ROS2(melodic)
 
+### 개발환경(IDE)
+Visual Studio Code, Arduino
+
+### H/W
+- LiDAR 센서
+- Turtlebot3 burger
+- TTS 모듈
+
+### S/W
+- RViz
+- Node-Red
+- Cartographer
+- Navigation2
+  
+### 개발언어
+- Bash
+- Python
+  
+### 알고리즘
+- DWA (Dynamic Window Approach)
+- slam (Simultaneous Localization And Mapping)
 <br/><br/>
 
 ## 3. 프로젝트 구조
